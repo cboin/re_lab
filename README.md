@@ -53,8 +53,8 @@ $ docker build -t re_lab .
 ```bash
 $ docker run -it \
     -v $(pwd)/share_ro:/share_ro:ro \
-    -v $(pwdà/share_rw:/share_rw \
-    re_lab:latest
+    -v $(pwd)/share_rw:/share_rw \
+    re_lab
 ```
 
 ### Shared folders
