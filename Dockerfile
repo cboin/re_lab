@@ -3,6 +3,9 @@
 FROM debian:stable-slim
 MAINTAINER Clément Boin
 
+ARG username="re"
+ARG password="docker"
+
 RUN apt-get update \
     && apt-get -y upgrade \
     && apt-get install -y --no-install-recommends apt-utils \
@@ -29,12 +32,15 @@ RUN apt-get update \
         lldb                \
         volatility          \
         binwalk             \
-        python3-binwalk
+        python3-binwalk     \
+        sudo
 
 # Create a standard user
-RUN useradd -ms /bin/bash re
-USER re
-WORKDIR /home/re
+RUN useradd -ms /bin/bash ${username}
+RUN echo "${username}:${password}" | chpasswd
+RUN adduser ${username} sudo
+USER ${username}
+WORKDIR /home/${username}
 
 # Install gdb-peda
 RUN git clone https://github.com/longld/peda.git ~/peda \

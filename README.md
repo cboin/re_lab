@@ -42,7 +42,7 @@ NOTE: You can find a installation guide on the docker web-site for the following
 * [python3-binwalk](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=python3-binwalk) - Python3 library for analyzing binary blobs and executable code
 * [gdb-peda](https://github.com/longld/peda) - Python Exploit Development Assistance for GDB
 * [angr](http://angr.io/) - A powerful and user-friendly binary analysis platform!
-
+* [sudo](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=sudo) -	Provide limited super user privileges to specific users 
 
 ### Installing
 
