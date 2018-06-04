@@ -33,7 +33,14 @@ RUN apt-get update \
         volatility          \
         binwalk             \
         python3-binwalk     \
-        sudo
+        sudo                \
+        locales             \
+        tmux                \
+        gcc-multilib
+
+# Set up locale for tmux
+RUN sed -i '/# en_US.UTF-8/s/^#//g' /etc/locale.gen
+RUN locale-gen
 
 # Create a standard user
 RUN useradd -ms /bin/bash ${username}

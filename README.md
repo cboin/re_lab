@@ -43,6 +43,7 @@ NOTE: You can find a installation guide on the docker web-site for the following
 * [gdb-peda](https://github.com/longld/peda) - Python Exploit Development Assistance for GDB
 * [angr](http://angr.io/) - A powerful and user-friendly binary analysis platform!
 * [sudo](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=sudo) -	Provide limited super user privileges to specific users 
+* [gcc-multilib](https://packages.ubuntu.com/search?keywords=gcc-multilib) - 	GNU C compiler (multilib files) 
 
 ### Installing
 
