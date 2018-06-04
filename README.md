@@ -44,6 +44,8 @@ NOTE: You can find a installation guide on the docker web-site for the following
 * [angr](http://angr.io/) - A powerful and user-friendly binary analysis platform!
 * [sudo](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=sudo) -	Provide limited super user privileges to specific users 
 * [gcc-multilib](https://packages.ubuntu.com/search?keywords=gcc-multilib) - 	GNU C compiler (multilib files) 
+* [locales](https://packages.debian.org/search?keywords=locales) - Embedded GNU C Library: National Language (locale) data
+* [tmux](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=tmux) - 	Terminal multiplexer 
 
 ### Installing
 

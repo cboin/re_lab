@@ -39,7 +39,7 @@ RUN apt-get update \
         gcc-multilib
 
 # Set up locale for tmux
-RUN sed -i '/# en_US.UTF-8/s/^#//g' /etc/locale.gen
+RUN sed -i '/en_US.UTF-8/s/^#//g' /etc/locale.gen
 RUN locale-gen
 
 # Create a standard user
